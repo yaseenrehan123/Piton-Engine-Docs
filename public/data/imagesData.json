@@ -1,0 +1,8 @@
+{
+    "rightBtn":"/images/right_btn.png",
+    "leftBtn":"/images/left_btn.png",
+    "jumpBtn":"/images/jump_btn.png",
+    "attackBtn":"/images/attack_btn.png",
+    "asteroid":"/images/asteroid.png",
+    "cancelBtn":"/images/cancel.png"
+}

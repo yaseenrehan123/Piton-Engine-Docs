@@ -1,0 +1,8 @@
+{
+    "player":{
+        "stats":{
+            "health":5,
+            "attackPower":3
+        }
+    }
+}
