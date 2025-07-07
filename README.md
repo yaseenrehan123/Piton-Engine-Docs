@@ -2,4 +2,4 @@
 Docs for Piton-Engine.
 
 ## Getting-Started
-Piton-Engine-Docs\src\docs\gettingStarted.ts
+[Getting Started Guide](src/docs/gettingStarted.ts)
