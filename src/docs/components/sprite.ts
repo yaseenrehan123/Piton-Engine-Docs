@@ -13,7 +13,7 @@ export class Sprite {
     public layer: number;                 // TYPE: number - Layer value used for draw order (higher draws on top).
     public active: boolean;               // TYPE: boolean - Whether the sprite is active and should be rendered.
     public blocksInput: boolean = true;   // TYPE: boolean - Whether this sprite blocks input (e.g., mouse clicks).
-
+    public scale:Vector2 = {x:1,y:1};     // TYPE: Vector2 - A multiplier to scale the sprite
     constructor(options: SpriteOptions) {
         this.image = options.image;
         this.width = options.width;
@@ -23,6 +23,7 @@ export class Sprite {
         this.layer = options.layer ?? 0;
         this.active = options.active ?? true;
         this.blocksInput = options.blocksInput ?? true;
+        this.scale = options.scale ?? {x:1,y:1};
     }
 };
 */

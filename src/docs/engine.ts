@@ -23,6 +23,9 @@ private startFunctions: Function[] //ARR OF START FUNCTIONS
 private sceneEntities: EntityId[] //ARR OF SCENES
 private currentSceneId: EntityId | null //CURRENT SCENE
 private input: Input | null //CONTAINS INPUT CLASS
+private domInteracted: boolean = false; // CHECK FOR IF DOM IS ALREADY INTERACTED
+private onDOMInteractionFunctions: Function[] = []; //ARR OF FN TO RUN AT FIRST DOM INTERACTION
+private storageManager: StorageManager | null = null; // A STORAGEMANAGER INSTANCE
 */
 
 /*FUNCTIONS*/
@@ -51,6 +54,7 @@ isEntityActive() //RETURNS WHETHER AN ENTITY IS ACTIVE(WHEN A ENTITY AND IT'S PA
 addScene() //MANUALLY ADDS A SCENE TO 'sceneEntities' ARRAY(AUTO DONE IF SCENE IS CREATED USING TEMPLATE)
 loadScene() //LOADS A SCENE, CALLING SCENE 'onLoad' and previous scene's 'onUnload' FN
 addParent() //ADDS A PARENT TO ENTITY(AUTO DONE BY PASSING IN PARENT KEY IF USING TEMPLATE). //CANT ADD A PARENT TO A SCENE!
+playAudio() //PLAYS AUDIO TAKING IN A 'AudioOptions' TYPE.
 */
 
 /*EXAMPLES*/ /*UNCOMMENT AS NEEDED*/
